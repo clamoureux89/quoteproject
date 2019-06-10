@@ -50,4 +50,4 @@ function printQuote(){
 ///Code given by Treehouse for event listener that changes quote on click of 'Show another quote' box///
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 ///After an interval of 3000 milliseconds run the function printQuote///
-setInterval(printQuote, 3000)
+setInterval(printQuote, 30000)
