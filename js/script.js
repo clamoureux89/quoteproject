@@ -41,7 +41,7 @@ function selectRandomColor(){
 ///The function then assigns this string to the innerHTML property of the div quote-box///
 function printQuote(){
     quote = getRandomQuote()
-    htmlString = '<p class = "quote">' + quote.text + "</p><p class='source'>" + quote.source 
+    htmlString = '<p class = "quote">' + quote.text + "</p> <p class='source'>" + quote.source 
     if (quote.citation){
         htmlString = htmlString + '<span class="citation">' + quote.citation + "</span>"
     }
@@ -51,7 +51,7 @@ function printQuote(){
     htmlString =  htmlString + "</p>"
     quotebox = document.getElementById('quote-box')
     quotebox.innerHTML = htmlString
-    document.getElementById('container').style.background.color= selectRandomColor()
+    document.getElementById('container').style.background = selectRandomColor()
 }
 
 
