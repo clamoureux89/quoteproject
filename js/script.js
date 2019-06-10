@@ -31,6 +31,10 @@ function getRandomQuote(){
     return quotes[number]
 }
 
+function selectRandomColor(){
+    return string(Math.floor(Math.random()*999))
+}
+
 ///Create a function that produces an HTML string containing the quote, source, year (if applicable) and citation (if applicable)///
 ///The function then assigns this string to the innerHTML property of the div quote-box///
 function printQuote(){
@@ -45,7 +49,10 @@ function printQuote(){
     htmlString =  htmlString + "</p>"
     quotebox = document.getElementById('quote-box')
     quotebox.innerHTML = htmlString
+    document.getElementById('container').style.color= "#" + selectRandomColor()
 }
+
+
 
 ///Code given by Treehouse for event listener that changes quote on click of 'Show another quote' box///
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
