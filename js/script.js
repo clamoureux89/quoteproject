@@ -33,7 +33,7 @@ function getRandomQuote(){
 
 function selectRandomColor(){
     colors = ["red","blue","green",'white',"yellow","orange"]
-    number = string(Math.floor(Math.random()*5))
+    number = (Math.floor(Math.random()*5))
     return colors[number]
 }
 
