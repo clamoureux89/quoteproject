@@ -27,7 +27,7 @@ const quotes =[quote1,quote2,quote3,quote4,quote5]
 
 ///Create a function that makes a random number from 0 to one less than the length of our quotes list.///
 function getRandomQuote(){
-    number = Math.floor(Math.random()*quotes.length-1)
+    number = Math.floor(Math.random()*(quotes.length-1))
     return quotes[number]
 }
 
