@@ -32,7 +32,9 @@ function getRandomQuote(){
 }
 
 function selectRandomColor(){
-    return string(Math.floor(Math.random()*999))
+    colors = ["red","blue","green",'white',"yellow","orange"]
+    number = string(Math.floor(Math.random()*5))
+    return colors[number]
 }
 
 ///Create a function that produces an HTML string containing the quote, source, year (if applicable) and citation (if applicable)///
@@ -49,7 +51,7 @@ function printQuote(){
     htmlString =  htmlString + "</p>"
     quotebox = document.getElementById('quote-box')
     quotebox.innerHTML = htmlString
-    document.getElementById('container').style.color= "#" + selectRandomColor()
+    document.getElementById('container').style.background.color= selectRandomColor()
 }
 
 
